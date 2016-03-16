@@ -22,6 +22,7 @@
     }
 
     //获取价格表的起始周日日期和最后周六日期
+    //lastDate 为最后一天开始的0：00
     function GetFOLDay(date) {
 
         var firstDate, lastDate;
