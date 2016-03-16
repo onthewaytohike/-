@@ -36,3 +36,20 @@
         return { 'firstDate': firstDate, 'lastDate': lastDate };
 
     }
+    
+    //return 自增X天毫秒数
+function SelfAddDay(time, addNum) {
+
+    var _date = new Date(time);
+    var _exMilS = _date.getTime();
+    var afterMilS = _exMilS + 24 * 60 * 60 * 1000;
+    return afterMilS;
+
+}
+
+//format Date
+function FormatDate(milS) {
+    var _date = new Date(milS);
+    return _date.getFullYear() + '-' + (_date.getMonth() + 1) + '-' + _date.getDate();
+
+}
